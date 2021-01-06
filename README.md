@@ -80,7 +80,7 @@ module.exports = {
     }
   },
   variants: {
-    aspectRatio: ['responsive', 'hover']
+    lineClamp: ['responsive', 'hover']
   }
 }
 ```
