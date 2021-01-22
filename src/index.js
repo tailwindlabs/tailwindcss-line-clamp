@@ -12,7 +12,7 @@ const lineClamp = plugin(
               overflow: 'hidden',
               display: '-webkit-box',
               '-webkit-box-orient': 'vertical',
-              '-webkit-line-clamp': value,
+              '-webkit-line-clamp': `${value}`,
             },
           }
         }),
