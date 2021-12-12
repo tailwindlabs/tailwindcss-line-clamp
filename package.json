@@ -14,6 +14,7 @@
     "trailingComma": "es5"
   },
   "scripts": {
+    "test": "jest",
     "prepublishOnly": "node scripts/build.js"
   },
   "peerDependencies": {
@@ -22,6 +23,8 @@
   "devDependencies": {
     "autoprefixer": "^10.2.0",
     "clean-css": "^4.2.1",
+    "jest": "^27.4.4",
+    "jest-matcher-css": "^1.1.0",
     "postcss": "^8.2.2",
     "tailwindcss": "^3.0.1"
   }
