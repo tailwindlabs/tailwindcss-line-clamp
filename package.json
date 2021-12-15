@@ -14,15 +14,14 @@
     "trailingComma": "es5"
   },
   "scripts": {
-    "test": "jest",
-    "prepublishOnly": "node scripts/build.js"
-  },
-  "peerDependencies": {
-    "tailwindcss": ">=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1"
+    "test": "jest"
   },
   "devDependencies": {
     "jest": "^27.4.4",
     "jest-matcher-css": "^1.1.0",
     "postcss": "^8.2.2"
+  },
+  "peerDependencies": {
+    "tailwindcss": ">=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1"
   }
 }
