@@ -8,11 +8,7 @@ A plugin that provides utilities for visually truncating text after a fixed numb
 Install the plugin from npm:
 
 ```sh
-# Using npm
-npm install @tailwindcss/line-clamp
-
-# Using Yarn
-yarn add @tailwindcss/line-clamp
+npm install -D @tailwindcss/line-clamp
 ```
 
 Then add the plugin to your `tailwind.config.js` file:
