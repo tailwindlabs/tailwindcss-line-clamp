@@ -18,10 +18,15 @@
   },
   "devDependencies": {
     "jest": "^27.4.4",
-    "jest-matcher-css": "^1.1.0",
-    "postcss": "^8.2.2"
+    "postcss": "^8.2.2",
+    "prettier": "^2.5.1"
   },
   "peerDependencies": {
     "tailwindcss": ">=2.0.0 || >=3.0.0 || >=3.0.0-alpha.1"
+  },
+  "jest": {
+    "setupFilesAfterEnv": [
+      "<rootDir>/jest/customMatchers.js"
+    ]
   }
 }
