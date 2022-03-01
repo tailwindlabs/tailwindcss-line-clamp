@@ -15,7 +15,7 @@ const lineClamp = plugin(
         'line-clamp': (value) => ({
           ...baseStyles,
           '-webkit-line-clamp': `${value}`,
-        })
+        }),
       },
       { values }
     )

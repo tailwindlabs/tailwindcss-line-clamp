@@ -26,30 +26,30 @@ expect.extend({
 
     const message = pass
       ? () => {
-        return (
-          this.utils.matcherHint('toMatchCss', undefined, undefined, options) +
-          '\n\n' +
-          `Expected: not ${this.utils.printExpected(format(received))}\n` +
-          `Received: ${this.utils.printReceived(format(argument))}`
-        )
-      }
+          return (
+            this.utils.matcherHint('toMatchCss', undefined, undefined, options) +
+            '\n\n' +
+            `Expected: not ${this.utils.printExpected(format(received))}\n` +
+            `Received: ${this.utils.printReceived(format(argument))}`
+          )
+        }
       : () => {
-        const actual = format(received)
-        const expected = format(argument)
+          const actual = format(received)
+          const expected = format(argument)
 
-        const diffString = diff(expected, actual, {
-          expand: this.expand,
-        })
+          const diffString = diff(expected, actual, {
+            expand: this.expand,
+          })
 
-        return (
-          this.utils.matcherHint('toMatchCss', undefined, undefined, options) +
-          '\n\n' +
-          (diffString && diffString.includes('- Expect')
-            ? `Difference:\n\n${diffString}`
-            : `Expected: ${this.utils.printExpected(expected)}\n` +
-            `Received: ${this.utils.printReceived(actual)}`)
-        )
-      }
+          return (
+            this.utils.matcherHint('toMatchCss', undefined, undefined, options) +
+            '\n\n' +
+            (diffString && diffString.includes('- Expect')
+              ? `Difference:\n\n${diffString}`
+              : `Expected: ${this.utils.printExpected(expected)}\n` +
+                `Received: ${this.utils.printReceived(actual)}`)
+          )
+        }
 
     return { actual: received, message, pass }
   },
@@ -67,27 +67,27 @@ expect.extend({
 
     const message = pass
       ? () => {
-        return (
-          this.utils.matcherHint('toIncludeCss', undefined, undefined, options) +
-          '\n\n' +
-          `Expected: not ${this.utils.printExpected(format(received))}\n` +
-          `Received: ${this.utils.printReceived(format(argument))}`
-        )
-      }
+          return (
+            this.utils.matcherHint('toIncludeCss', undefined, undefined, options) +
+            '\n\n' +
+            `Expected: not ${this.utils.printExpected(format(received))}\n` +
+            `Received: ${this.utils.printReceived(format(argument))}`
+          )
+        }
       : () => {
-        const diffString = diff(expected, actual, {
-          expand: this.expand,
-        })
+          const diffString = diff(expected, actual, {
+            expand: this.expand,
+          })
 
-        return (
-          this.utils.matcherHint('toIncludeCss', undefined, undefined, options) +
-          '\n\n' +
-          (diffString && diffString.includes('- Expect')
-            ? `Difference:\n\n${diffString}`
-            : `Expected: ${this.utils.printExpected(expected)}\n` +
-            `Received: ${this.utils.printReceived(actual)}`)
-        )
-      }
+          return (
+            this.utils.matcherHint('toIncludeCss', undefined, undefined, options) +
+            '\n\n' +
+            (diffString && diffString.includes('- Expect')
+              ? `Difference:\n\n${diffString}`
+              : `Expected: ${this.utils.printExpected(expected)}\n` +
+                `Received: ${this.utils.printReceived(actual)}`)
+          )
+        }
 
     return { actual: received, message, pass }
   },
@@ -116,30 +116,30 @@ expect.extend({
 
     const message = pass
       ? () => {
-        return (
-          this.utils.matcherHint('toMatchCss', undefined, undefined, options) +
-          '\n\n' +
-          `Expected: not ${this.utils.printExpected(formattedReceived)}\n` +
-          `Received: ${this.utils.printReceived(formattedArgument)}`
-        )
-      }
+          return (
+            this.utils.matcherHint('toMatchCss', undefined, undefined, options) +
+            '\n\n' +
+            `Expected: not ${this.utils.printExpected(formattedReceived)}\n` +
+            `Received: ${this.utils.printReceived(formattedArgument)}`
+          )
+        }
       : () => {
-        const actual = formattedReceived
-        const expected = formattedArgument
+          const actual = formattedReceived
+          const expected = formattedArgument
 
-        const diffString = diff(expected, actual, {
-          expand: this.expand,
-        })
+          const diffString = diff(expected, actual, {
+            expand: this.expand,
+          })
 
-        return (
-          this.utils.matcherHint('toMatchCss', undefined, undefined, options) +
-          '\n\n' +
-          (diffString && diffString.includes('- Expect')
-            ? `Difference:\n\n${diffString}`
-            : `Expected: ${this.utils.printExpected(expected)}\n` +
-            `Received: ${this.utils.printReceived(actual)}`)
-        )
-      }
+          return (
+            this.utils.matcherHint('toMatchCss', undefined, undefined, options) +
+            '\n\n' +
+            (diffString && diffString.includes('- Expect')
+              ? `Difference:\n\n${diffString}`
+              : `Expected: ${this.utils.printExpected(expected)}\n` +
+                `Received: ${this.utils.printReceived(actual)}`)
+          )
+        }
 
     return { actual: received, message, pass }
   },

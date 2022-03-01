@@ -17,7 +17,11 @@ function run(config, plugin = tailwindcss) {
 
 it('should add the `line-clamp-{n}` components', () => {
   const config = {
-    content: [{ raw: String.raw`<div class="line-clamp-2 line-clamp-[33] line-clamp-[var(--line-clamp-variable)]"></div>` }],
+    content: [
+      {
+        raw: String.raw`<div class="line-clamp-2 line-clamp-[33] line-clamp-[var(--line-clamp-variable)]"></div>`,
+      },
+    ],
   }
 
   return run(config).then((result) => {
