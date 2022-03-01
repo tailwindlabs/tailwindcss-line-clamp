@@ -1,7 +1,7 @@
 const path = require('path')
 const postcss = require('postcss')
 const tailwindcss = require('tailwindcss')
-const lineClampPlugin = require('../src')
+const lineClampPlugin = require('.')
 
 function run(config, plugin = tailwindcss) {
   let { currentTestName } = expect.getState()
