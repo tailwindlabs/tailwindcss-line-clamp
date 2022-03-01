@@ -7,21 +7,38 @@ const baseStyles = {
 }
 
 const lineClamp = plugin(
-  function ({ matchComponents, addUtilities, theme, variants, e }) {
+  function ({ matchUtilities, addUtilities, theme, variants, e }) {
     const values = theme('lineClamp')
 
-    matchComponents(
-      {
-        'line-clamp': (value) => [
-          {
-            ...baseStyles,
-            '-webkit-line-clamp': `${value}`,
-          }
-        ]
-      },
-      { values }
-    )
+    if (matchUtilities) {
+      // Tailwind CSS v3.0+
+      matchUtilities(
+        {
+          'line-clamp': (value) => [
+            {
+              ...baseStyles,
+              '-webkit-line-clamp': `${value}`,
+            }
+          ]
+        },
+        { values }
+      )
 
+      addUtilities(
+        [
+          {
+            '.line-clamp-none': {
+              '-webkit-line-clamp': 'unset',
+            },
+          },
+        ],
+        variants('lineClamp')
+      )
+
+      return
+    }
+
+    // Tailwind CSS v2.0+
     addUtilities(
       [
         Object.entries(values).map(([key, value]) => {
