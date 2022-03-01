@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add support for arbitrary values ([#10](https://github.com/tailwindlabs/tailwindcss-line-clamp/pull/10))
+
 ## [0.3.1] - 2021-12-09
 
 ### Fixed
