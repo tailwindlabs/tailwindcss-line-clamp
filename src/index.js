@@ -1,21 +1,27 @@
 const plugin = require('tailwindcss/plugin')
 
+const baseStyles = {
+  overflow: 'hidden',
+  display: '-webkit-box',
+  '-webkit-box-orient': 'vertical',
+}
+
 const lineClamp = plugin(
-  function ({ addUtilities, theme, variants, e }) {
+  function ({ matchUtilities, addUtilities, theme, variants, e }) {
     const values = theme('lineClamp')
+
+    matchUtilities(
+      {
+        'line-clamp': (value) => ({
+          ...baseStyles,
+          '-webkit-line-clamp': `${value}`,
+        })
+      },
+      { values }
+    )
 
     addUtilities(
       [
-        Object.entries(values).map(([key, value]) => {
-          return {
-            [`.${e(`line-clamp-${key}`)}`]: {
-              overflow: 'hidden',
-              display: '-webkit-box',
-              '-webkit-box-orient': 'vertical',
-              '-webkit-line-clamp': `${value}`,
-            },
-          }
-        }),
         {
           '.line-clamp-none': {
             '-webkit-line-clamp': 'unset',
