@@ -28,7 +28,7 @@ module.exports = {
 
 ## Usage
 
-Use the `line-clamp-{n}` utilities to specify how many lines of text should be visible before truncating::
+Use the `line-clamp-{n}` utilities to specify how many lines of text should be visible before truncating:
 
 ```html
 <p class="line-clamp-3">
