@@ -2,6 +2,7 @@
   "name": "@tailwindcss/line-clamp",
   "version": "0.4.0",
   "main": "src/index.js",
+  "types": "src/index.d.ts",
   "license": "MIT",
   "repository": "https://github.com/tailwindlabs/tailwindcss-line-clamp",
   "publishConfig": {
