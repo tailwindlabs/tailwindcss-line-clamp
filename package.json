@@ -1,6 +1,6 @@
 {
   "name": "@tailwindcss/line-clamp",
-  "version": "0.4.0",
+  "version": "0.4.1",
   "main": "src/index.js",
   "types": "src/index.d.ts",
   "license": "MIT",
