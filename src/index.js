@@ -7,7 +7,7 @@ const baseStyles = {
 }
 
 const lineClamp = plugin(
-  function ({ matchUtilities, addUtilities, theme, variants, e }) {
+  function ({ matchUtilities, addUtilities, theme, variants }) {
     const values = theme('lineClamp')
 
     matchUtilities(
