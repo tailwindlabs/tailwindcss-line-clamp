@@ -11,12 +11,13 @@ const baseStyles = {
 const lineClamp = plugin(
   function ({ matchUtilities, addUtilities, theme, variants }) {
     if (semver.gte(tailwindPkg.version, '3.3.0')) {
-      console.warn(
-        [
+      console.log(
+        `\u001b[31m${[
           'As of Tailwind CSS v3.3, the `@tailwindcss/line-clamp` plugin is now included by default.',
           'Remove it from the `plugins` array in your configuration to eliminate this warning.',
-        ].join('\n')
+        ].join('\n')}\u001b[0m`
       )
+
       return
     }
 
