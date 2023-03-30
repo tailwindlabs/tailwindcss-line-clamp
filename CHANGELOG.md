@@ -7,7 +7,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-- Nothing yet!
+### Fixed
+
+- Warn when used in Tailwind CSS v3.3+ ([#26](https://github.com/tailwindlabs/tailwindcss-line-clamp/pull/26))
 
 ## [0.4.2] - 2022-09-02
 
