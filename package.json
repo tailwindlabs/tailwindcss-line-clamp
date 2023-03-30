@@ -30,5 +30,8 @@
     "setupFilesAfterEnv": [
       "<rootDir>/jest/customMatchers.js"
     ]
+  },
+  "dependencies": {
+    "semver": "^7.3.8"
   }
 }
