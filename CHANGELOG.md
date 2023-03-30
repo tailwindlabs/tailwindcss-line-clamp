@@ -7,11 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- Nothing yet!
+
+## [0.4.4] - 2023-03-30
+
+### Changed
+
 - Remove Tailwind CSS v3.3 warning ([#28](https://github.com/tailwindlabs/tailwindcss-line-clamp/pull/28))
 
 ## [0.4.3] - 2023-03-30
 
-### Fixed
+### Changed
 
 - Warn when used in Tailwind CSS v3.3+ ([#26](https://github.com/tailwindlabs/tailwindcss-line-clamp/pull/26))
 
@@ -73,7 +79,8 @@ This release of `@tailwindcss/line-clamp` is designed for Tailwind CSS v3.0+, an
 
 Initial release!
 
-[unreleased]: https://github.com/tailwindlabs/tailwindcss-line-clamp/compare/v0.4.3...HEAD
+[unreleased]: https://github.com/tailwindlabs/tailwindcss-line-clamp/compare/v0.4.4...HEAD
+[0.4.4]: https://github.com/tailwindlabs/tailwindcss-line-clamp/compare/v0.4.3...v0.4.4
 [0.4.3]: https://github.com/tailwindlabs/tailwindcss-line-clamp/compare/v0.4.2...v0.4.3
 [0.4.2]: https://github.com/tailwindlabs/tailwindcss-line-clamp/compare/v0.4.1...v0.4.2
 [0.4.1]: https://github.com/tailwindlabs/tailwindcss-line-clamp/compare/v0.4.0...v0.4.1
