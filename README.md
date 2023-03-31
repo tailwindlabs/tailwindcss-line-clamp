@@ -3,7 +3,7 @@
 A plugin that provides utilities for visually truncating text after a fixed number of lines.
 
 > **Warning**
-> As of Tailwind CSS v3.3 the `line-clamp` utilities are now included by default and this plugin is no longer required.
+> As of Tailwind CSS v3.3 the `line-clamp` utilities are now included in the framework by default and this plugin is no longer required.
 
 ## Installation
 
