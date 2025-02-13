@@ -13,19 +13,11 @@ Install the plugin from npm:
 npm install -D @tailwindcss/line-clamp
 ```
 
-Then add the plugin to your `tailwind.config.js` file:
+Then add the plugin to your main `style.css` file:
 
-```js
-// tailwind.config.js
-module.exports = {
-  theme: {
-    // ...
-  },
-  plugins: [
-    require('@tailwindcss/line-clamp'),
-    // ...
-  ],
-}
+```diff
+  @import "tailwindcss";
++ @plugin "@tailwindcss/line-clamp";
 ```
 
 ## Usage
