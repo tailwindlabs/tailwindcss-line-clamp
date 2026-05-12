@@ -38,7 +38,7 @@ jobs:
         run: |
           if [ "${{ github.event_name }}" = "release" ]; then
             echo "RELEASE_KIND=release" >> $GITHUB_ENV
-            echo "RELEASE_CHANNEL=$(node -e \"let version = require('./package.json').version; let match = /\\d+\\.\\d+\\.\\d+-(.*)(\\.\\d+)?/.exec(version); console.log(match ? match[1] : 'latest')\")" >> $GITHUB_ENV
+            echo "RELEASE_CHANNEL=$(npm run release-channel --silent)" >> $GITHUB_ENV
           else
             echo "RELEASE_KIND=insiders" >> $GITHUB_ENV
             echo "INSIDERS_VERSION=0.0.0-insiders.$(git rev-parse --short HEAD)" >> $GITHUB_ENV
